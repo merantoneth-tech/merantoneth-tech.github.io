@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mer Antoneth Gripo - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background-color: #d9d9d9;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px 60px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  .logo-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #f2a900;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: #333;
+
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+
+  .nav-links span {
+    color: #ccc;
+  }
+   .active {
+    font-weight: bold;
+  }
+
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 60px;
+    min-height: 80vh;
+    flex-wrap: wrap;
+  }
+
+  .profile-img {
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .hero-text {
+    max-width: 450px;
+  }
+
+  .hero-text h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 5rem;
+    color: #6b5b1f;
+    margin-bottom: 10px;
+  }
+
+  .hero-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+
+  .hero-text p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .btn-circle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.2s ease;
+    width: 150px;
+    height: 150px;
+  }
+
+  .btn-circle:hover {
+    transform: scale(1.05);
+  }
+
+  .resume-btn { background-color: #1a1a1a; }
+  .projects-btn { background-color: #b8860b; }
+  .contact-btn { background-color: #5c4a1a; }
+
+  /* Footer / Contact info */
+  .contact-info {
+    background-color: #f2f2f2;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    border-top: 1px solid #ddd;
+  }
+
+  .contact-info h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .contact-info a {
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+    .profile-img {
+      width: 300px;
+      height: 300px;
+    }
+    .hero-text h1 {
+      font-size: 3.5rem;
+    }
+    .buttons {
+      justify-content: center;
+    }
+    .contact-info {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-dot"></span>
+      <a href="index.html">Home</a>
+    </div>
+    <div class="nav-links">
+      <a href="resume.html">Resume</a>
+      <span>|</span>
+      <a href="projects.html">Projects</a>
+      <span>|</span>
+      <a href="contactMe.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img src="images/ID.jpg" alt="Mer Antoneth Gripo" class="profile-img">
+    <div class="hero-text">
+      <h1>Hello</h1>
+      <h2>I'm Mer Antoneth Gripo</h2>
+      <p>I am currently studying at Davao Del Norte State College, taking the course of Bachelor of Science in Information Technology</p>
+      <div class="buttons">
+        <a href="resume.html" class="btn-circle resume-btn">Resume</a>
+        <a href="projects.html" class="btn-circle projects-btn">Projects</a>
+        <a href="contactMe.html" class="btn-circle contact-btn">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-info" id="contact">
+    <div>
+      <h3>Phone</h3>
+      <a href="tel:09524526134">09524526134</a>
+    </div>
+    <div>
+      <h3>Email</h3>
+      <a href="mailto:gripo.merantoneth@dnsc.edu.ph">gripo.merantoneth@dnsc.edu.ph</a>
+    </div>
+    <div>
+      <h3>Follow Me</h3>
+      <div class="social-icons">
+        <a href="https://github.com/merantoneth-tech" target="_blank" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/i_mer03/" target="_blank" title="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/merantoneth.gripo" target="_blank" title="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
