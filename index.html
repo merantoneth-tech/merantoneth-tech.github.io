@@ -83,6 +83,7 @@
     height: 480px;
     border-radius: 50%;
     object-fit: cover;
+    max-width: 100%;
   }
 
   .hero-text {
@@ -181,14 +182,23 @@
     flex-shrink: 0;
   }
 
+  /* Tablet */
   @media (max-width: 900px) {
+    .navbar {
+      padding: 15px 30px;
+    }
     .hero {
       flex-direction: column;
       text-align: center;
+      padding: 50px 30px;
+      gap: 40px;
     }
     .profile-img {
       width: 300px;
       height: 300px;
+    }
+    .hero-text {
+      max-width: 100%;
     }
     .hero-text h1 {
       font-size: 3.5rem;
@@ -199,6 +209,69 @@
     .contact-info {
       flex-direction: column;
       gap: 20px;
+      padding: 30px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      gap: 12px;
+      padding: 15px 20px;
+    }
+    .nav-links {
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .hero {
+      padding: 40px 20px;
+    }
+    .profile-img {
+      width: 220px;
+      height: 220px;
+    }
+    .hero-text h1 {
+      font-size: 2.8rem;
+    }
+    .hero-text h2 {
+      font-size: 1.2rem;
+    }
+    .hero-text p {
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+    }
+    .buttons {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .btn-circle {
+      width: 110px;
+      height: 110px;
+      font-size: 1rem;
+    }
+    .contact-info {
+      padding: 25px 20px;
+    }
+    .contact-info h3 {
+      font-size: 0.95rem;
+    }
+    .contact-info a {
+      font-size: 0.9rem;
+      word-break: break-word;
+    }
+  }
+
+  /* Small mobile */
+  @media (max-width: 380px) {
+    .hero-text h1 {
+      font-size: 2.3rem;
+    }
+    .btn-circle {
+      width: 95px;
+      height: 95px;
+      font-size: 0.9rem;
     }
   }
 </style>
