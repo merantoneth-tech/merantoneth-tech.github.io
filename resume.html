@@ -168,18 +168,67 @@
     flex-shrink: 0;
   }
 
+  /* Tablet */
   @media (max-width: 900px) {
+    .navbar {
+      padding: 15px 30px;
+    }
+    .resume-section {
+      padding: 40px 30px;
+    }
     .resume-section .container {
       flex-direction: column;
       gap: 20px;
     }
+    .resume-section h2 {
+      min-width: unset;
+    }
     .education-item {
       flex-direction: column;
       gap: 5px;
+      margin-bottom: 20px;
     }
     .contact-info {
       flex-direction: column;
       gap: 20px;
+      padding: 30px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      gap: 12px;
+      padding: 15px 20px;
+    }
+    .nav-links {
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .resume-section {
+      padding: 30px 20px;
+    }
+    .resume-section h2 {
+      font-size: 1.25rem;
+    }
+    .resume-content p,
+    .skills-list li {
+      font-size: 0.9rem;
+    }
+    .education-item .school {
+      font-size: 0.95rem;
+    }
+    .contact-info {
+      padding: 25px 20px;
+    }
+    .contact-info h3 {
+      font-size: 0.95rem;
+    }
+    .contact-info a {
+      font-size: 0.9rem;
+      word-break: break-word;
     }
   }
 </style>
